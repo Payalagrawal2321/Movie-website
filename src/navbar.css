@@ -1,0 +1,27 @@
+/* Navbar container */
+.navbar {
+    background-color: black; /* Background color */
+    padding: 10px; /*Padding around the navbar */
+    
+  }
+  
+  /* Navbar list */
+  .navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Display items in a row */
+    align-items: center; /* Center items vertically */
+  }
+  
+  
+  /* Navbar links */
+  li{
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    font-size: large;
+  }
+  
+  .navbar img {
+    height: 20px; /* Adjust height */
+    margin-right: 10px; /* Spacing between logo and text */
+  }
+  

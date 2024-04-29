@@ -1,11 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { useGlobalContext } from "./context";
+import './Movie.css';
 
 const imgUrl = "https://via.placeholder.com/200/200";
 
 const Movie = () => {
-  const { movie,Rating,ReleaseDate,description,addToFavorites} = useGlobalContext();
+  const { movie,addToFavorites} = useGlobalContext();
   
 
   return (
@@ -15,7 +16,7 @@ const Movie = () => {
         <div className="grid grid-4-col">
           {movie
             ? movie.map((curMovieElem) => {
-                const { imdbID, Poster,Title, imdbRating} = curMovieElem;
+                const { imdbID, Poster,Title} = curMovieElem;
                 const movieName = Title.substring(0, 15);
                 
                 return (
@@ -31,9 +32,6 @@ const Movie = () => {
                             ? `${movieName}...`
                             : movieName}
                          </h2>
-                         <p>Ratings: {Rating}</p>
-                         <p>ReleaseDate: {ReleaseDate}</p>
-                         <p>description: {description}</p>
                          </div>
 
                          <div className="add-to-favorites">

@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 
 // setting the api link
-export const API_URL = ` https://api.themoviedb.org/3/movie/top_rated?api_key=cc31d08b0d4b5b3539a406e5af2ae
-c1f&language=en-US&page=1`;
+export const API_URL = `http://www.omdbapi.com/?i=tt3896198&apikey=aa128d92`;
 
 
 const useFetch = (apiParams) => {

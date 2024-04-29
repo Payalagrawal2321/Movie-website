@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Movie from "./Movie";
 import Search from "./search";
+import Navbar from "./navbar";
 
 const Home = () => {
     const [favourites, setFavorites] = useState([]);
@@ -10,16 +11,13 @@ const Home = () => {
     };
 
     const movieData = {
-      Title: 'Movie Name',
-      Ratings:'4,5/5',
-      ReleaseDate:'2024-04-20',
-      description:'description of the movie....',
     };
   return (
     <>
+      <Navbar/>
       <div className="container">
         <Search />
-        <Movie />
+        {/* <Movie /> */}
         <Movie {...movieData} addToFavorites={() => addToFavorites(movieData)} />
       </div>
     </>
@@ -27,3 +25,4 @@ const Home = () => {
 };
 
 export default Home;
+
