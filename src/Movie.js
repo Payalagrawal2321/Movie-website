@@ -6,8 +6,10 @@ import './Movie.css';
 const imgUrl = "https://via.placeholder.com/200/200";
 
 const Movie = () => {
-  const { movie,addToFavorites} = useGlobalContext();
-  
+  const { movie,addToFavorites,isLoading} = useGlobalContext();
+  if (isLoading) {
+    return <div className="loading">Loading....</div>;
+  }
 
   return (
     <>

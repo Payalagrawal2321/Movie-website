@@ -8,7 +8,7 @@ const Search = () => {
     <>
       <section className="search-section">
         <h2>Search Your Favourite Movie</h2>
-        <form action="#" onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={(e) => e.preventDefault()}>
           <div>
             <input
               type="text"
