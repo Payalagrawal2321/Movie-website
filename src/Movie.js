@@ -18,11 +18,11 @@ const Movie = () => {
         <div className="grid grid-4-col">
           {movie
             ? movie.map((curMovieElem) => {
-                const { imdbID, Poster,Title} = curMovieElem;
+                const {Poster,Title} = curMovieElem;
                 const movieName = Title.substring(0, 15);
                 
                 return (
-                  <NavLink to={`movie/${imdbID}`} key={imdbID}>
+                  <NavLink to={`movie`} >
                       <div className="card">
                         <div className="card-info">
                           <div>

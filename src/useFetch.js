@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 // setting the api link
-export const API_URL = `http://www.omdbapi.com/?i=tt3896198&apikey=aa128d92`;
+export const API_URL = `https://www.omdbapi.com/?i=tt3896198&apikey=aa128d92`;
 
 
 const useFetch = (apiParams) => {
